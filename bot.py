@@ -30,7 +30,7 @@ def run():
 threading.Thread(target=run).start()
 
 #  Load conversations(Conversation.json file se)
-with open("conversations.json", "r", encoding="utf-8") as f:
+with open("conversation.json", "r", encoding="utf-8") as f:
     categories = json.load(f)
 all_replies = sum(categories.values(), [])
 
