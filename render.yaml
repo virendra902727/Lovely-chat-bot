@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: lovely-bot
+    env: python
+    buildCommand: ""
+    startCommand: bash start.sh
+    envVars:
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
+      - key: CHANNEL_USERNAME
+        sync: false
